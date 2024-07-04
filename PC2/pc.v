@@ -1,6 +1,10 @@
-/*MIPS 32 Instruction Fetching*/
+/*Módulo responsável pelo Fetch de instruções*/
 
-module Pc();
+module Pc(addr, pc_out);
+
+input [31:0] addr;
+output [31:0] pc_out;
+
 
 
 
