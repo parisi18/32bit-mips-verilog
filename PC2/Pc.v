@@ -1,6 +1,6 @@
 /*Módulo responsável pelo Fetch de instruções*/
 
-module Pc(addr, pc_out);
+module Pc(addr_in, pc_out);
 
 input [31:0] addr_in;
 output reg [31:0] pc_out;
