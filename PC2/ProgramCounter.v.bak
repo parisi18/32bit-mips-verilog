@@ -1,6 +1,6 @@
 /*Módulo responsável pelo Fetch de instruções*/
 
-module FetchInstruction(clk, instr_in, instr_out);
+module ProgramCounter(clk, instr_in, instr_out);
 
 input clk;
 input [31:0] instr_in;

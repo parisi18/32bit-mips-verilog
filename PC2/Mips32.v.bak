@@ -1,0 +1,7 @@
+module Mips32(
+	input clk
+);
+
+ProcessUnit pu();
+
+endmodule

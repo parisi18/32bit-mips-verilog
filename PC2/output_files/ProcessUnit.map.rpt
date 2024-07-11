@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessUnit
-Mon Jul 08 14:26:59 2024
+Wed Jul 10 09:57:17 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,13 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 08 14:26:59 2024       ;
+; Analysis & Synthesis Status        ; Failed - Wed Jul 10 09:57:17 2024           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ProcessUnit                                 ;
 ; Top-level Entity Name              ; ProcessUnit                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 1                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -161,125 +155,43 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; ProcessUnit.v                    ; yes             ; User Verilog HDL File  ; D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/PC2/ProcessUnit.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 1     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 1     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |ProcessUnit               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |ProcessUnit        ; ProcessUnit ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 1                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jul 08 14:26:53 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessUnit -c ProcessUnit
+    Info: Processing started: Wed Jul 10 09:57:11 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mips32 -c ProcessUnit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file processunit.v
-    Info (12023): Found entity 1: ProcessUnit File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/PC2/ProcessUnit.v Line: 27
+    Info (12023): Found entity 1: ProcessUnit File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file fetchinstruction.v
-    Info (12023): Found entity 1: FetchInstruction File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/PC2/FetchInstruction.v Line: 3
+    Info (12023): Found entity 1: FetchInstruction File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/FetchInstruction.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file instructionparser.v
-    Info (12023): Found entity 1: InstructionParser File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/PC2/InstructionParser.v Line: 1
+    Info (12023): Found entity 1: InstructionParser File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/InstructionParser.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
-    Info (12023): Found entity 1: InstructionMemory File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/PC2/InstructionMemory.v Line: 1
+    Info (12023): Found entity 1: InstructionMemory File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/InstructionMemory.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registers.v
-    Info (12023): Found entity 1: Registers File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/PC2/Registers.v Line: 1
+    Info (12023): Found entity 1: Registers File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/Registers.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
+    Info (12023): Found entity 1: DataMemory File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/DataMemory.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mips32.v
+    Info (12023): Found entity 1: Mips32 File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/Mips32.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu32.v
+    Info (12023): Found entity 1: ALU32 File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/ALU32.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(38): instance has no name File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 38
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(41): instance has no name File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 41
+Critical Warning (10846): Verilog HDL Instantiation warning at Mips32.v(9): instance has no name File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/Mips32.v Line: 9
 Info (12127): Elaborating entity "ProcessUnit" for the top level hierarchy
-Warning (12158): Entity "ProcessUnit" contains only dangling pins
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/PC2/ProcessUnit.v Line: 29
-Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4741 megabytes
-    Info: Processing ended: Mon Jul 08 14:26:59 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:03
+Info (12128): Elaborating entity "FetchInstruction" for hierarchy "FetchInstruction:comb_3" File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 38
+Error (10043): Verilog HDL unsupported feature error at FetchInstruction.v(12): Procedural Continuous Assignment to register is not supported File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/FetchInstruction.v Line: 12
+Error (12152): Can't elaborate user hierarchy "FetchInstruction:comb_3" File: D:/Users/parisi-dev/Documents/UNIFESP/Lab AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 38
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 4 warnings
+    Error: Peak virtual memory: 4704 megabytes
+    Error: Processing ended: Wed Jul 10 09:57:17 2024
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:03
 
 

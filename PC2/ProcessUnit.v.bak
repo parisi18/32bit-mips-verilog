@@ -24,7 +24,16 @@ Jump incondicional:
     - JAL
 */
 
-module Main();
+module ProcessUnit(
+	input clk
+	input wire [31:0] instr;
+	);
+	
+
+FetchInstruction fi();
+InstructionMemory im();
+Registers rg();
+DataMemory dm();
 
 
 
