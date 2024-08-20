@@ -1,25 +1,30 @@
 module Registers(
-	input clk, 
-	input [4:0] rs, 
-	input [4:0] rt,
-	input [4:0] write_addr,
-	input [31:0] write_reg,
-	input write_enable,
-	output [31:0] rd1,
-	output [31:0] rd2
+	input Clk, 
+	input [4:0] ReadReg1, 
+	input [4:0] ReadReg2,
+	input [4:0] WriteReg,
+	input [31:0] WriteData,
+	input [31:0] PcOut,
+	input RegWrite,
+	input Jal,
+	output [31:0] DataRead1,
+	output [31:0] DataRead2
 );
-
 
 reg [31:0] regs [31:0];
 
-
-rd1 = regs[rs];
-rd2 = regs[rt];
-
-always(posedge clk) begin
-	if(write_enable) begin
-		assign regs[write_addr] = write_reg;
+always @(posedge Clk) begin
+	if(RegWrite) begin
+		regs[WriteReg] = WriteData;
 	end
+	
+	if(Jal) begin
+		regs[31] = PcOut + 1;
+	end
+	
 end
+
+assign DataRead1 = regs[ReadReg1];
+assign DataRead2 = regs[ReadReg2];
 
 endmodule

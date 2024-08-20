@@ -1,11 +1,14 @@
 module InstructionMemory(
-	input clk, 
-	input [31:0] instr_in,
-	output [31:0] instr_out
+	input Clk, 
+	input [31:0] Addr,
+	output [31:0] InstrOut
 );
 
-reg [100000:0] mem [31:0];
+reg [31:0] mem [31:0];
 
-instr_out = mem[instr_in];
-
+always @(Clk) begin
+	/********TODO**********/
+	/***Aqui contera o programa instruçao por instrucao***/
+end
+assign InstrOut = mem[Addr];
 endmodule
