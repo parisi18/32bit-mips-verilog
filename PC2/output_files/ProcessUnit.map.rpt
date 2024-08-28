@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessUnit
-Thu Aug 15 22:29:55 2024
+Wed Aug 21 22:17:43 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,19 +14,9 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "ControlUnit:comb_4"
- 10. Port Connectivity Checks: "ProcessUnit:comb_3|DataMemMux:comb_13"
- 11. Port Connectivity Checks: "ProcessUnit:comb_3|DataMemory:comb_12"
- 12. Port Connectivity Checks: "ProcessUnit:comb_3|PCMux:comb_11"
- 13. Port Connectivity Checks: "ProcessUnit:comb_3|ALU32:comb_10"
- 14. Port Connectivity Checks: "ProcessUnit:comb_3|Registers:comb_7"
- 15. Port Connectivity Checks: "ProcessUnit:comb_3|RtAndRdMux:comb_6"
- 16. Port Connectivity Checks: "ProcessUnit:comb_3|InstructionParser:comb_5"
- 17. Port Connectivity Checks: "ProcessUnit:comb_3|ProgramCounter:comb_3"
- 18. Port Connectivity Checks: "ProcessUnit:comb_3"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -53,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 15 22:29:55 2024       ;
+; Analysis & Synthesis Status        ; Successful - Wed Aug 21 22:17:43 2024       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; ProcessUnit                                 ;
-; Top-level Entity Name              ; Mips32                                      ;
+; Top-level Entity Name              ; ProgramCounter                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 1                                           ;
+; Total logic elements               ; 32                                          ;
+;     Total combinational functions  ; 32                                          ;
+;     Dedicated logic registers      ; 32                                          ;
+; Total registers                    ; 32                                          ;
+; Total pins                         ; 66                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -75,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; Mips32             ; ProcessUnit        ;
+; Top-level entity name                                            ; ProgramCounter     ; ProcessUnit        ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -171,66 +161,54 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                           ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
-; ProcessUnit.v                    ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v       ;         ;
-; InstructionParser.v              ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/InstructionParser.v ;         ;
-; InstructionMemory.v              ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/InstructionMemory.v ;         ;
-; Registers.v                      ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Registers.v         ;         ;
-; DataMemory.v                     ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/DataMemory.v        ;         ;
-; Mips32.v                         ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v            ;         ;
-; ALU32.v                          ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v             ;         ;
-; ProgramCounter.v                 ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProgramCounter.v    ;         ;
-; ControlUnit.v                    ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v       ;         ;
-; RtAndRdMux.v                     ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/RtAndRdMux.v        ;         ;
-; SignalExtend.v                   ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/SignalExtend.v      ;         ;
-; Alu32Mux.v                       ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Alu32Mux.v          ;         ;
-; PCMux.v                          ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/PCMux.v             ;         ;
-; DataMemMux.v                     ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/DataMemMux.v        ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------+---------+
+; ProgramCounter.v                 ; yes             ; User Verilog HDL File  ; /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProgramCounter.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 1     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 1     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 32        ;
+;                                             ;           ;
+; Total combinational functions               ; 32        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 0         ;
+;     -- 3 input functions                    ; 1         ;
+;     -- <=2 input functions                  ; 31        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1         ;
+;     -- arithmetic mode                      ; 31        ;
+;                                             ;           ;
+; Total registers                             ; 32        ;
+;     -- Dedicated logic registers            ; 32        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 66        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; Clk~input ;
+; Maximum fan-out                             ; 32        ;
+; Total fan-out                               ; 226       ;
+; Average fan-out                             ; 1.15      ;
++---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Mips32                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |Mips32             ; Mips32      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
+; |ProgramCounter            ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 66   ; 0            ; |ProgramCounter     ; ProgramCounter ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -239,7 +217,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 32    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -249,114 +227,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ControlUnit:comb_4"                                                                                                       ;
-+-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                                                                  ;
-+-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; AluOP ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "AluOP[5..1]" have no fanouts ;
-+-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|DataMemMux:comb_13"                                                                                                                  ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                                            ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; ReadData  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "ReadData[31..1]" will be connected to GND. ;
-; WriteData ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "WriteData[31..1]" have no fanouts                     ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|DataMemory:comb_12"                                                                                                                   ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                                             ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; WriteData ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "WriteData[31..1]" will be connected to GND. ;
-; DataRead  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "DataRead[31..1]" have no fanouts                       ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|PCMux:comb_11"                                                                                                                                                         ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; ExtendedImm ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; PCOut       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; Out         ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "Out[31..1]" have no fanouts                                                           ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|ALU32:comb_10"                                                                                                             ;
-+-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
-+-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; AluOP ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (6 bits) it drives.  Extra input bit(s) "AluOP[5..1]" will be connected to GND. ;
-+-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|Registers:comb_7"                                                                                                                                                   ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; WriteReg  ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (5 bits) it drives.  The 27 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; WriteData ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "WriteData[31..1]" will be connected to GND.                                ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|RtAndRdMux:comb_6"                                                                                                                   ;
-+-----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                                                                                      ;
-+-----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Rt              ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "Rt[31..5]" will be connected to GND. ;
-; Rd              ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "Rd[31..5]" will be connected to GND. ;
-; InstrOut[31..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
-+-----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|InstructionParser:comb_5"                                           ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; InstrIn ; Input  ; Info     ; Explicitly unconnected                                                              ;
-; Immj    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3|ProgramCounter:comb_3"                                                                                                     ;
-+------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                        ;
-+------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
-; PcIn ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "PcIn[31..1]" will be connected to GND. ;
-+------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ProcessUnit:comb_3"                                                                                                         ;
-+--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                   ;
-+--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; OpCode ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "OpCode[5..1]" have no fanouts ;
-+--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 1                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 66                          ;
+; cycloneiii_ff         ; 32                          ;
+;     plain             ; 32                          ;
+; cycloneiii_lcell_comb ; 32                          ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 1                           ;
+;         1 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.28                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -374,12 +262,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Aug 15 22:29:51 2024
+    Info: Processing started: Wed Aug 21 22:17:39 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mips32 -c ProcessUnit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ProcessUnit.v
-    Info (12023): Found entity 1: ProcessUnit File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 27
+    Info (12023): Found entity 1: ProcessUnit File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file InstructionParser.v
     Info (12023): Found entity 1: InstructionParser File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/InstructionParser.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file InstructionMemory.v
@@ -408,93 +296,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file PCMux.v
     Info (12023): Found entity 1: PCMux File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/PCMux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file DataMemMux.v
     Info (12023): Found entity 1: DataMemMux File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/DataMemMux.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at ProcessUnit.v(147): created implicit net for "DataRead2" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 147
+Warning (10236): Verilog HDL Implicit Net warning at ProcessUnit.v(124): created implicit net for "DataRead2" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 124
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(51): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 51
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(57): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 57
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(68): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 68
 Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(75): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 75
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(81): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 81
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(87): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 87
 Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(92): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 92
 Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(99): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 99
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(110): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 110
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(115): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 115
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(122): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 122
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(131): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 131
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(143): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 143
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(152): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 152
-Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(159): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 159
-Critical Warning (10846): Verilog HDL Instantiation warning at Mips32.v(35): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v Line: 35
-Critical Warning (10846): Verilog HDL Instantiation warning at Mips32.v(51): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v Line: 51
-Info (12127): Elaborating entity "Mips32" for the top level hierarchy
-Info (12128): Elaborating entity "ProcessUnit" for hierarchy "ProcessUnit:comb_3" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v Line: 35
-Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProcessUnit:comb_3|ProgramCounter:comb_3" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 75
-Warning (10230): Verilog HDL assignment warning at ProgramCounter.v(14): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProgramCounter.v Line: 14
-Warning (10230): Verilog HDL assignment warning at ProgramCounter.v(17): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProgramCounter.v Line: 17
-Info (12128): Elaborating entity "InstructionMemory" for hierarchy "ProcessUnit:comb_3|InstructionMemory:comb_4" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 81
-Warning (10858): Verilog HDL warning at InstructionMemory.v(7): object mem used but never assigned File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/InstructionMemory.v Line: 7
-Info (12128): Elaborating entity "InstructionParser" for hierarchy "ProcessUnit:comb_3|InstructionParser:comb_5" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 92
-Info (12128): Elaborating entity "RtAndRdMux" for hierarchy "ProcessUnit:comb_3|RtAndRdMux:comb_6" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 99
-Info (12128): Elaborating entity "Registers" for hierarchy "ProcessUnit:comb_3|Registers:comb_7" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 110
-Info (12128): Elaborating entity "SignalExtend" for hierarchy "ProcessUnit:comb_3|SignalExtend:comb_8" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 115
-Info (12128): Elaborating entity "Alu32Mux" for hierarchy "ProcessUnit:comb_3|Alu32Mux:comb_9" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 122
-Info (12128): Elaborating entity "ALU32" for hierarchy "ProcessUnit:comb_3|ALU32:comb_10" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 131
-Warning (10230): Verilog HDL assignment warning at ALU32.v(68): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 68
-Warning (10230): Verilog HDL assignment warning at ALU32.v(74): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 74
-Warning (10230): Verilog HDL assignment warning at ALU32.v(80): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 80
-Warning (10230): Verilog HDL assignment warning at ALU32.v(86): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 86
-Warning (10230): Verilog HDL assignment warning at ALU32.v(92): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 92
-Warning (10230): Verilog HDL assignment warning at ALU32.v(98): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 98
-Warning (10230): Verilog HDL assignment warning at ALU32.v(104): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 104
-Warning (10230): Verilog HDL assignment warning at ALU32.v(110): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 110
-Warning (10230): Verilog HDL assignment warning at ALU32.v(116): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 116
-Warning (10230): Verilog HDL assignment warning at ALU32.v(122): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 122
-Warning (10230): Verilog HDL assignment warning at ALU32.v(129): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 129
-Warning (10230): Verilog HDL assignment warning at ALU32.v(135): truncated value with size 32 to match size of target (1) File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 135
-Warning (10272): Verilog HDL Case Statement warning at ALU32.v(113): case item expression covers a value already covered by a previous case item File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ALU32.v Line: 113
-Info (12128): Elaborating entity "PCMux" for hierarchy "ProcessUnit:comb_3|PCMux:comb_11" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 143
-Info (12128): Elaborating entity "DataMemory" for hierarchy "ProcessUnit:comb_3|DataMemory:comb_12" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 152
-Info (12128): Elaborating entity "DataMemMux" for hierarchy "ProcessUnit:comb_3|DataMemMux:comb_13" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 159
-Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:comb_4" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v Line: 51
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(55): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 55
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(72): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 72
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(89): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 89
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(106): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 106
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(123): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 123
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(140): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 140
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(157): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 157
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(174): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 174
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(191): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 191
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(208): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 208
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(225): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 225
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(242): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 242
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(259): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 259
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(276): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 276
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(293): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 293
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(310): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 310
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(327): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 327
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(344): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 344
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(361): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 361
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(378): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 378
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(395): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 395
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(412): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 412
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(429): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 429
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(446): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 446
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(463): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 463
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(480): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 480
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(497): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 497
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(514): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 514
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(531): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 531
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(548): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 548
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(565): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 565
-Warning (10199): Verilog HDL Case Statement warning at ControlUnit.v(582): case item expression never matches the case expression File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ControlUnit.v Line: 582
-Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(108): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 108
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(120): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 120
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(129): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 129
+Critical Warning (10846): Verilog HDL Instantiation warning at ProcessUnit.v(136): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/ProcessUnit.v Line: 136
+Critical Warning (10846): Verilog HDL Instantiation warning at Mips32.v(39): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v Line: 39
+Critical Warning (10846): Verilog HDL Instantiation warning at Mips32.v(55): instance has no name File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v Line: 55
+Info (12127): Elaborating entity "ProgramCounter" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: /home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/Mips32.v Line: 3
-Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 361 megabytes
-    Info: Processing ended: Thu Aug 15 22:29:55 2024
+Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 32 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 363 megabytes
+    Info: Processing ended: Wed Aug 21 22:17:43 2024
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:13
 

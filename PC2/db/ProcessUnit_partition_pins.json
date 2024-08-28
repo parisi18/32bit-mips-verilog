@@ -2,7 +2,272 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "PcOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Jump",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PcIn[31]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

@@ -1,22 +1,25 @@
-module DataMemory(
+module DataMemory
+#(parameter DATA_WIDTH=32, parameter ADDR_WIDTH=32)
+(
 	input Clk,
-	input [31:0] WriteData,
-	input [31:0] Addr,
+	input [(DATA_WIDTH-1):0] WriteData,
+	input [(ADDR_WIDTH-1):0] Addr,
 	input MemWrite,
 	input MemRead,
-	output reg [31:0] DataRead 
+	output reg [(DATA_WIDTH-1):0] DataRead
 );
 
-reg [31:0] mem[31:0];
+reg [DATA_WIDTH-1:0] mem[ADDR_WIDTH-1:0];
 
-always@ (posedge Clk) 
-begin
-		if(MemWrite) begin
-			mem[Addr] <= WriteData;
-		end
-		
-		if(MemRead) begin
-			DataRead <= mem[Addr];
-		end
+always@ (posedge Clk) begin
+	if(MemWrite) begin
+		mem[Addr] <= WriteData;
+	end
+end
+	
+always@ (*) begin
+	if(MemRead) begin
+		DataRead <= mem[Addr];
+	end
 end
 endmodule
