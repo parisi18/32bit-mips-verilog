@@ -22,7 +22,7 @@ wire [31:0] _instruction;
 wire [31:0] _reg_to_mem_dest;
 wire [31:0] _data_read1;
 wire [31:0] _data_read2;
-wire [31:0] _reg_write;
+wire [4:0] _write_reg;
 
 wire [4:0] _rs;
 wire [4:0] _rt;
@@ -37,11 +37,11 @@ wire [31:0] _imme_or_data_read2;
 wire [31:0] _alu_out;
 wire _alu_res_sig;
 
-wire _pc_in;
+wire [31:0] _pc_in;
 
-wire _data_memory_out;
+wire [31:0] _data_memory_out;
 
-wire _write_data;
+wire [31:0] _write_data;
 
 ProgramCounter(
 	.Clk(Clk), 
@@ -71,15 +71,16 @@ RtAndRdMux(
 	.Rt(_rt),
 	.Rd(_rd),
 	.RegDst(RegDst),
-	.InstrOut(_reg_write)
+	.InstrOut(_write_reg)
 );
 
 Registers(
 	.Clk(Clk),
 	.ReadReg1(_rs),
 	.ReadReg2(_rt),
-	.WriteReg(_reg_write),
+	.WriteReg(_write_reg),
 	.WriteData(_write_data),
+	.PcOut(_pc_out),
 	.RegWrite(RegWrite),
 	.Jal(Jal),
 	.DataRead1(_data_read1),

@@ -4,131 +4,303 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "PcOut[0]",
+					"name" : "DataRead1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[1]",
+					"name" : "DataRead1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[2]",
+					"name" : "DataRead1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[3]",
+					"name" : "DataRead1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[4]",
+					"name" : "DataRead1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[5]",
+					"name" : "DataRead1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[6]",
+					"name" : "DataRead1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[7]",
+					"name" : "DataRead1[7]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[8]",
+					"name" : "DataRead1[8]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[9]",
+					"name" : "DataRead1[9]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[10]",
+					"name" : "DataRead1[10]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[11]",
+					"name" : "DataRead1[11]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[12]",
+					"name" : "DataRead1[12]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[13]",
+					"name" : "DataRead1[13]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[14]",
+					"name" : "DataRead1[14]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[15]",
+					"name" : "DataRead1[15]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[16]",
+					"name" : "DataRead1[16]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[17]",
+					"name" : "DataRead1[17]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[18]",
+					"name" : "DataRead1[18]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[19]",
+					"name" : "DataRead1[19]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[20]",
+					"name" : "DataRead1[20]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[21]",
+					"name" : "DataRead1[21]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[22]",
+					"name" : "DataRead1[22]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[23]",
+					"name" : "DataRead1[23]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[24]",
+					"name" : "DataRead1[24]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[25]",
+					"name" : "DataRead1[25]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[26]",
+					"name" : "DataRead1[26]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[27]",
+					"name" : "DataRead1[27]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[28]",
+					"name" : "DataRead1[28]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[29]",
+					"name" : "DataRead1[29]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[30]",
+					"name" : "DataRead1[30]",
 					"strict" : false
 				},
 				{
-					"name" : "PcOut[31]",
+					"name" : "DataRead1[31]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DataRead2[31]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadReg2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[0]",
 					"strict" : false
 				},
 				{
@@ -136,135 +308,283 @@
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[0]",
+					"name" : "RegWrite",
 					"strict" : false
 				},
 				{
-					"name" : "Jump",
+					"name" : "WriteReg[0]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[1]",
+					"name" : "WriteReg[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[2]",
+					"name" : "WriteReg[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[3]",
+					"name" : "WriteReg[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[4]",
+					"name" : "WriteReg[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[5]",
+					"name" : "PcOut[0]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[6]",
+					"name" : "Jal",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[7]",
+					"name" : "WriteData[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[8]",
+					"name" : "PcOut[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[9]",
+					"name" : "WriteData[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[10]",
+					"name" : "PcOut[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[11]",
+					"name" : "WriteData[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[12]",
+					"name" : "PcOut[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[13]",
+					"name" : "WriteData[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[14]",
+					"name" : "PcOut[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[15]",
+					"name" : "WriteData[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[16]",
+					"name" : "PcOut[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[17]",
+					"name" : "WriteData[6]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[18]",
+					"name" : "PcOut[6]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[19]",
+					"name" : "WriteData[7]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[20]",
+					"name" : "PcOut[7]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[21]",
+					"name" : "WriteData[8]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[22]",
+					"name" : "PcOut[8]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[23]",
+					"name" : "WriteData[9]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[24]",
+					"name" : "PcOut[9]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[25]",
+					"name" : "WriteData[10]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[26]",
+					"name" : "PcOut[10]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[27]",
+					"name" : "WriteData[11]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[28]",
+					"name" : "PcOut[11]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[29]",
+					"name" : "WriteData[12]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[30]",
+					"name" : "PcOut[12]",
 					"strict" : false
 				},
 				{
-					"name" : "PcIn[31]",
+					"name" : "WriteData[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[13]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[14]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[15]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[16]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[17]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[18]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[19]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[20]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[21]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[22]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[23]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[24]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[25]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[26]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[27]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[28]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[29]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[30]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData[31]",
+					"strict" : false
+				},
+				{
+					"name" : "PcOut[31]",
 					"strict" : false
 				}
 			]

@@ -1,0 +1,155 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/simulation/qsim
+vInstructionParser
+Z1 !s110 1724983984
+!i10b 1
+!s100 oJ1EcO@dIzbI6`mH7=kHT1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ih5k<N^QDAfHM3R^`JV=aQ0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1724983983
+Z5 8ProcessUnit.vo
+Z6 FProcessUnit.vo
+!i122 36
+L0 32 1372
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1724983984.000000
+Z9 !s107 ProcessUnit.vo|
+Z10 !s90 -work|work|ProcessUnit.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@instruction@parser
+vInstructionParser_vlg_vec_tst
+R1
+!i10b 1
+!s100 7hIH2ZME0o2]@=eeklcUa1
+R2
+IXJMQMBolQWYa9RzjzLHaO0
+R3
+R0
+R4
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+!i122 37
+L0 30 222
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R11
+R12
+n@instruction@parser_vlg_vec_tst
+vProgramCounter
+Z13 !s110 1724885874
+!i10b 1
+!s100 iChiIX4Pnf[Y]g3=cfDO>2
+R2
+I?2_3?j[lSdQ@3BaW5L>8T1
+R3
+R0
+w1724885874
+R5
+R6
+!i122 18
+L0 32 2058
+R7
+r1
+!s85 0
+31
+Z14 !s108 1724885874.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@program@counter
+vProgramCounter_vlg_vec_tst
+R13
+!i10b 1
+!s100 0Q=9hRBBEP<XV=Ae7`<UI1
+R2
+I5j]L4m_NI_J0IU>Sn6fJo1
+R3
+R0
+w1724885873
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 19
+L0 30 235
+R7
+r1
+!s85 0
+31
+R14
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R11
+R12
+n@program@counter_vlg_vec_tst
+vRtAndRdMux
+Z15 !s110 1725058463
+!i10b 1
+!s100 7YX:>RUBQZAE^Gh3oE@=z3
+R2
+IVKL?BEg59O9230LUCGg6T1
+R3
+R0
+Z16 w1725058462
+R5
+R6
+!i122 40
+L0 32 294
+R7
+r1
+!s85 0
+31
+Z17 !s108 1725058463.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@rt@and@rd@mux
+vRtAndRdMux_vlg_vec_tst
+R15
+!i10b 1
+!s100 [H@AC09GL?kO2@zTb1VZj1
+R2
+I6^M1mfEA;gKXba[Wn_=9G2
+R3
+R0
+R16
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+!i122 41
+L0 30 79
+R7
+r1
+!s85 0
+31
+R17
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R11
+R12
+n@rt@and@rd@mux_vlg_vec_tst

@@ -1,0 +1,100 @@
+$comment
+	File created using the following command:
+		vcd file Mips32.msim.vcd -direction
+$end
+$date
+	Fri Aug 30 19:54:23 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module RtAndRdMux_vlg_vec_tst $end
+$var reg 5 ! Rd [4:0] $end
+$var reg 1 " RegDst $end
+$var reg 5 # Rt [4:0] $end
+$var wire 1 $ InstrOut [4] $end
+$var wire 1 % InstrOut [3] $end
+$var wire 1 & InstrOut [2] $end
+$var wire 1 ' InstrOut [1] $end
+$var wire 1 ( InstrOut [0] $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / InstrOut[0]~output_o $end
+$var wire 1 0 InstrOut[1]~output_o $end
+$var wire 1 1 InstrOut[2]~output_o $end
+$var wire 1 2 InstrOut[3]~output_o $end
+$var wire 1 3 InstrOut[4]~output_o $end
+$var wire 1 4 Rt[0]~input_o $end
+$var wire 1 5 Rd[0]~input_o $end
+$var wire 1 6 RegDst~input_o $end
+$var wire 1 7 InstrOut~0_combout $end
+$var wire 1 8 Rt[1]~input_o $end
+$var wire 1 9 Rd[1]~input_o $end
+$var wire 1 : InstrOut~1_combout $end
+$var wire 1 ; Rt[2]~input_o $end
+$var wire 1 < Rd[2]~input_o $end
+$var wire 1 = InstrOut~2_combout $end
+$var wire 1 > Rt[3]~input_o $end
+$var wire 1 ? Rd[3]~input_o $end
+$var wire 1 @ InstrOut~3_combout $end
+$var wire 1 A Rt[4]~input_o $end
+$var wire 1 B Rd[4]~input_o $end
+$var wire 1 C InstrOut~4_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 !
+1"
+b10 #
+0(
+1'
+0&
+0%
+0$
+0)
+1*
+x+
+1,
+1-
+1.
+0/
+10
+01
+02
+03
+04
+15
+16
+07
+18
+19
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+$end
+#480000
+0"
+06
+17
+1/
+1(
+#1000000

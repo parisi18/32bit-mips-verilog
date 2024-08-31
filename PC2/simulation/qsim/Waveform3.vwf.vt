@@ -1,0 +1,252 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "08/29/2024 23:13:03"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          InstructionParser
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module InstructionParser_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [31:0] InstrIn;
+// wires                                               
+wire [15:0] Immi;
+wire [25:0] Immj;
+wire [5:0] Op;
+wire [4:0] Rd;
+wire [4:0] Rs;
+wire [4:0] Rt;
+wire [4:0] Shamt;
+
+// assign statements (if any)                          
+InstructionParser i1 (
+// port map - connection between master ports and signals/registers   
+	.Immi(Immi),
+	.Immj(Immj),
+	.InstrIn(InstrIn),
+	.Op(Op),
+	.Rd(Rd),
+	.Rs(Rs),
+	.Rt(Rt),
+	.Shamt(Shamt)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// InstrIn[31]
+initial
+begin
+	InstrIn[31] = 1'b0;
+end 
+
+// InstrIn[30]
+initial
+begin
+	InstrIn[30] = 1'b0;
+end 
+
+// InstrIn[29]
+initial
+begin
+	InstrIn[29] = 1'b0;
+end 
+
+// InstrIn[28]
+initial
+begin
+	InstrIn[28] = 1'b0;
+end 
+
+// InstrIn[27]
+initial
+begin
+	InstrIn[27] = 1'b0;
+end 
+
+// InstrIn[26]
+initial
+begin
+	InstrIn[26] = 1'b0;
+end 
+
+// InstrIn[25]
+initial
+begin
+	InstrIn[25] = 1'b0;
+end 
+
+// InstrIn[24]
+initial
+begin
+	InstrIn[24] = 1'b0;
+end 
+
+// InstrIn[23]
+initial
+begin
+	InstrIn[23] = 1'b0;
+end 
+
+// InstrIn[22]
+initial
+begin
+	InstrIn[22] = 1'b0;
+end 
+
+// InstrIn[21]
+initial
+begin
+	InstrIn[21] = 1'b1;
+end 
+
+// InstrIn[20]
+initial
+begin
+	InstrIn[20] = 1'b0;
+end 
+
+// InstrIn[19]
+initial
+begin
+	InstrIn[19] = 1'b0;
+end 
+
+// InstrIn[18]
+initial
+begin
+	InstrIn[18] = 1'b0;
+end 
+
+// InstrIn[17]
+initial
+begin
+	InstrIn[17] = 1'b1;
+end 
+
+// InstrIn[16]
+initial
+begin
+	InstrIn[16] = 1'b0;
+end 
+
+// InstrIn[15]
+initial
+begin
+	InstrIn[15] = 1'b0;
+end 
+
+// InstrIn[14]
+initial
+begin
+	InstrIn[14] = 1'b0;
+end 
+
+// InstrIn[13]
+initial
+begin
+	InstrIn[13] = 1'b0;
+end 
+
+// InstrIn[12]
+initial
+begin
+	InstrIn[12] = 1'b1;
+end 
+
+// InstrIn[11]
+initial
+begin
+	InstrIn[11] = 1'b1;
+end 
+
+// InstrIn[10]
+initial
+begin
+	InstrIn[10] = 1'b0;
+end 
+
+// InstrIn[9]
+initial
+begin
+	InstrIn[9] = 1'b0;
+end 
+
+// InstrIn[8]
+initial
+begin
+	InstrIn[8] = 1'b0;
+end 
+
+// InstrIn[7]
+initial
+begin
+	InstrIn[7] = 1'b0;
+end 
+
+// InstrIn[6]
+initial
+begin
+	InstrIn[6] = 1'b0;
+end 
+
+// InstrIn[5]
+initial
+begin
+	InstrIn[5] = 1'b0;
+end 
+
+// InstrIn[4]
+initial
+begin
+	InstrIn[4] = 1'b0;
+end 
+
+// InstrIn[3]
+initial
+begin
+	InstrIn[3] = 1'b0;
+end 
+
+// InstrIn[2]
+initial
+begin
+	InstrIn[2] = 1'b0;
+end 
+
+// InstrIn[1]
+initial
+begin
+	InstrIn[1] = 1'b0;
+end 
+
+// InstrIn[0]
+initial
+begin
+	InstrIn[0] = 1'b0;
+end 
+endmodule
+

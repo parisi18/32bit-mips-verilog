@@ -7,11 +7,9 @@ module DataMemMux(
 
 always@ (*) 
 begin
-	if(MemToReg) begin
+	if(MemToReg)
 		WriteData = ReadData;
-	end
-	else begin
+	else
 		WriteData = AluOut;
-	end
 end
 endmodule

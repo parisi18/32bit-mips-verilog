@@ -14,16 +14,16 @@ module Registers(
 reg [31:0] regs [31:0];
 
 always @(posedge Clk) begin
-	if(RegWrite) begin
+	if(RegWrite)
 		regs[WriteReg] = WriteData;
-	end
 	
-	if(Jal) begin
-		regs[31] = PcOut + 1;
-	end
+	if(Jal)
+		regs[31] = PcOut + 1; //$ra = next instr
+
 	
 end
-
+//assign DataRead1 = (ReadReg1 == 0) ? 31'b0 : regs[ReadReg1]
+//assign DataRead2 = (ReadReg2 == 0) ? 31'b0 : regs[ReadReg2]
 assign DataRead1 = regs[ReadReg1];
 assign DataRead2 = regs[ReadReg2];
 

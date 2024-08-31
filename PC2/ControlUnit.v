@@ -324,14 +324,14 @@ always@ (*)
 				end
 				
 			//JAL
-			6'b010001:
+			6'b010010:
 				begin
 					AluOP     = 6'bxxxxxx;
 					RegDst    = 0;
 					Branch    = 0;
 					JumpReg   = 0;
 					Jump      = 1;
-					Jal       = 1;
+					Jal       = 1; //to reg[31] assignment
 					And       = 0;
 					MemRead   = 0;
 					MemToReg  = 0;
@@ -341,7 +341,7 @@ always@ (*)
 				end
 				
 			//JR
-			6'b010001:
+			6'b010011:
 				begin
 					AluOP     = 6'bxxxxxx;
 					RegDst    = 0;

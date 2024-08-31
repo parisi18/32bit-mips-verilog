@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ProcessUnit
-Wed Aug 28 19:30:52 2024
+Fri Aug 30 19:54:22 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Aug 28 19:30:52 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Aug 30 19:54:22 2024 ;
 ; Revision Name             ; ProcessUnit                           ;
-; Top-level Entity Name     ; ProgramCounter                        ;
+; Top-level Entity Name     ; RtAndRdMux                            ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -95,15 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Aug 28 19:30:52 2024
+    Info: Processing started: Fri Aug 30 19:54:22 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="/home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/simulation/qsim/" Mips32 -c ProcessUnit
-Info (119004): Automatically selected device EP4CE6F17C6 for design ProcessUnit
-Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
+Info (119004): Automatically selected device EP4CE6E22C6 for design ProcessUnit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ProcessUnit.vo in folder "/home/dev-parisi/Documentos/UNIFESP/LAB AOC/32bit-mips-verilog/PC2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 599 megabytes
-    Info: Processing ended: Wed Aug 28 19:30:52 2024
+    Info: Peak virtual memory: 600 megabytes
+    Info: Processing ended: Fri Aug 30 19:54:22 2024
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

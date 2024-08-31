@@ -7,12 +7,10 @@ module Alu32Mux(
 
 always@ (*)
 begin
-	if(Immediate) begin
+	if(Immediate)
 		DataOut = ImmediateData;
-	end
-	else begin
+	else
 		DataOut = DataRead2;
-	end
 end
 
 endmodule

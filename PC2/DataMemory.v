@@ -12,14 +12,12 @@ module DataMemory
 reg [DATA_WIDTH-1:0] mem[ADDR_WIDTH-1:0];
 
 always@ (posedge Clk) begin
-	if(MemWrite) begin
+	if(MemWrite)
 		mem[Addr] <= WriteData;
-	end
 end
 	
 always@ (*) begin
-	if(MemRead) begin
+	if(MemRead)
 		DataRead <= mem[Addr];
-	end
 end
 endmodule

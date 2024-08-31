@@ -1,18 +1,15 @@
 module RtAndRdMux(
-	input [31:0] Rt,
-	input [31:0] Rd,
+	input [4:0] Rt,
+	input [4:0] Rd,
 	input RegDst, //Sinal imediato
-	output reg [31:0] InstrOut
+	output reg [4:0] InstrOut
 );
 
-always@ (*)
-	begin
-		if(RegDst) begin
+always@ (*) begin
+		if(RegDst) 
 			InstrOut = Rt;
-		end
-		else begin
+		else 
 			InstrOut = Rd;
-		end
-	end
+end
 
 endmodule

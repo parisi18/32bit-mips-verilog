@@ -6,25 +6,22 @@ module PCMux(
 	input ExtendedImm,
 	input [31:0] Instruction,
 	input [31:0] Reg,
-	input PCOut,
+	input [31:0] PCOut,
 	output reg [31:0] Out
 );
 
 always@ (*)
 begin
 
-	if(Jump) begin
+	if(Jump)
 		Out = Instruction;
-	end
-	else if((And & AluRes) == 1) begin
+	else if((And & AluRes) == 1)
 		Out = ExtendedImm;
-	end
-	else if(JumpReg) begin
+	else if(JumpReg)
 		Out = Reg;
-	end
-	else begin
+	else
 		Out = PCOut;
-	end
 
 end
+
 endmodule
