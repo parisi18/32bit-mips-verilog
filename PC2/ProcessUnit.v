@@ -3,7 +3,7 @@
 module ProcessUnit(
 	input Clk,
 	output [5:0] OpCode,
-	input AluOP,
+	input [5:0] AluOP,
 	input RegDst,
 	input Branch,
 	input JumpReg,
@@ -14,7 +14,13 @@ module ProcessUnit(
 	input MemToReg,
 	input MemWrite,
 	input Immediate, //ALUSrc
-	input RegWrite
+	input RegWrite,
+	output [31:0] debug_reg_3,
+	output [31:0] debug_reg_2,
+	output [31:0] debug_reg_4,
+	output [31:0] debug_reg_0,
+	output [31:0] instruction_debug,
+	output [31:0] pc_debug
 );
 
 wire [31:0] _pc_out;
@@ -43,20 +49,25 @@ wire [31:0] _data_memory_out;
 
 wire [31:0] _write_data;
 
-ProgramCounter(
+
+ProgramCounter program_counter(
 	.Clk(Clk), 
 	.PcIn(_pc_in),
 	.PcOut(_pc_out),
 	.Jump(Jump)
 );
 
-InstructionMemory(
+assign pc_debug = _pc_out;
+
+InstructionMemory instruction_memory(
 	.Clk(Clk), 
 	.Addr(_pc_out), 
 	.InstrOut(_instruction)
 );
 
-InstructionParser(
+assign instruction_debug = _instruction;
+
+InstructionParser instruction_parser(
 	.InstrIn(_instruction),
 	.Op(OpCode),
 	.Rs(_rs),
@@ -67,48 +78,54 @@ InstructionParser(
 	.Shamt(_shamt)
 );
 
-RtAndRdMux(
+RtAndRdMux rt_and_rd_mux(
 	.Rt(_rt),
 	.Rd(_rd),
 	.RegDst(RegDst),
 	.InstrOut(_write_reg)
 );
 
-Registers(
+Registers regs(
 	.Clk(Clk),
 	.ReadReg1(_rs),
 	.ReadReg2(_rt),
 	.WriteReg(_write_reg),
 	.WriteData(_write_data),
-	.PcOut(_pc_out),
+	.ImmiAddr(_immi),
 	.RegWrite(RegWrite),
 	.Jal(Jal),
 	.DataRead1(_data_read1),
-	.DataRead2(_data_read2)
+	.DataRead2(_data_read2),
+	.regs_31_debug(),
+	.regs_wreg_debug(),
+	.debug_$3(debug_reg_3),
+	.debug_$2(debug_reg_2),
+	.debug_$4(debug_reg_4),
+	.debug_$0(debug_reg_0)
 );
 
-SignalExtend(
+SignalExtend sig_extend(
 	.Immi(_immi),
 	.ImmiExtended(_immi_extended)
 );
 
-Alu32Mux(
+Alu32Mux alu_32_mux(
 	.DataRead2(_data_read2),
 	.ImmediateData(_immi_extended),
 	.Immediate(Immediate), //ALUSrc
 	.DataOut(_imme_or_data_read2)
 );
 
-ALU32 (
-	.OP1(_data_read1),
-	.OP2(_imme_or_data_read2),
+Alu32 alu_32(
+	.Op1(_data_read1),
+	.Op2(_imme_or_data_read2),
 	.Out(_alu_out),
 	.AluOP(AluOP),
 	.Shamt(_shamt),
 	.Zero(_alu_res_sig)
 );
 
-PCMux(
+PCMux pc_mux(
 	.Jump(Jump),
 	.JumpReg(JumpReg),
 	.And(And),
@@ -120,16 +137,16 @@ PCMux(
 	.Out(_pc_in)
 );
 
-DataMemory(
+DataMemory data_mem(
 	.Clk(Clk),
-	.WriteData(DataRead2),
+	.WriteData(_data_read2),
 	.Addr(_alu_out),
 	.MemWrite(MemWrite),
 	.MemRead(MemRead),
 	.DataRead(_data_memory_out)
 );
 
-DataMemMux(
+DataMemMux data_mem_mux(
 	.AluOut(_alu_out),
 	.ReadData(_data_memory_out),
 	.MemToReg(MemToReg),

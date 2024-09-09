@@ -1,9 +1,15 @@
 module Mips32(
-	input Clk
+	input Clk,
+	output [31:0] reg_3,
+	output [31:0] reg_2,
+	output [31:0] reg_4,
+	output [31:0] reg_0,
+	output [31:0] instr_dbg,
+	output [31:0] pc_debug
 );
 
-wire _op_code;
-wire _alu_op;
+wire [5:0] _op_code;
+wire [5:0] _alu_op;
 wire _reg_dst;
 wire _branch;
 wire _jump_reg;
@@ -19,9 +25,8 @@ wire _reg_write;
 //TODO: 
 //INTERFACE ENTRADA
 //INTERFACE SAIDA	
-//CONTROLE DE EXEC
 
-ProcessUnit(
+ProcessUnit process_unit(
 	.Clk(Clk), 
 	.OpCode(_op_code),
 	.AluOP(_alu_op),
@@ -35,10 +40,16 @@ ProcessUnit(
 	.MemToReg(_mem_to_reg),
 	.MemWrite(_mem_write),
 	.Immediate(_immediate),
-	.RegWrite(_reg_write)
+	.RegWrite(_reg_write),
+	.debug_reg_3(reg_3),
+	.debug_reg_2(reg_2),
+	.debug_reg_4(reg_4),
+	.debug_reg_0(reg_0),
+	.instruction_debug(instr_dbg),
+	.pc_debug(pc_debug)
 );
 
-ControlUnit(
+ControlUnit control_unit(
 	.OpCode(_op_code),
 	.AluOP(_alu_op),
 	.RegDst(_reg_dst),

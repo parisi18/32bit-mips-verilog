@@ -1,5 +1,5 @@
 module ControlUnit(
-	input OpCode,
+	input [5:0] OpCode,
 	output reg [5:0] AluOP,
 	output reg RegDst,
 	output reg Branch,
@@ -593,6 +593,22 @@ always@ (*)
 					MemWrite  = 0;
 					Immediate = 1;
 					RegWrite  = 1;
+				end
+				
+			6'b111111:
+				begin
+					AluOP     = 6'b000000;
+					RegDst    = 0;
+					Branch    = 0;
+					JumpReg   = 0;
+					Jump      = 0;
+					Jal       = 0;
+					And       = 0;
+					MemRead   = 0;
+					MemToReg  = 0;
+					MemWrite  = 0;
+					Immediate = 0;
+					RegWrite  = 0;
 				end
 		endcase
 	end

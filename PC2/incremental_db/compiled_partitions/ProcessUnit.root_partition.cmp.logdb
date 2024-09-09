@@ -1,0 +1,2 @@
+v1
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,ProcessUnit:comb_3|Alu32:comb_74|lpm_mult:Mult0|mult_7dt:auto_generated|mac_mult5,
