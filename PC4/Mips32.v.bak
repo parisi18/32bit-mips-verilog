@@ -1,0 +1,83 @@
+module Mips32(
+	input Clk,
+	input [17:0] SW,
+	output [6:0] HEX0,
+	output [6:0] HEX1,
+	output [6:0] HEX2,
+	output [6:0] HEX3,
+	output [6:0] HEX4,
+	output [6:0] HEX5,
+	output [6:0] HEX6,
+	output [6:0] HEX7
+);
+
+wire [5:0] _op_code;
+wire [5:0] _alu_op;
+wire _reg_dst;
+wire _branch;
+wire _jump_reg;
+wire _jump;
+wire _jal;
+wire _and;
+wire _mem_read;
+wire _mem_to_reg;
+wire _mem_write;
+wire _immediate;
+wire _reg_write;
+
+wire [17:0] _sw_value;
+
+wire [32:0] _mem_val;
+
+InputInterface input_interface(
+	.Clk(Clk), 
+	.Sw(SW)
+);
+
+ProcessUnit process_unit(
+	.Clk(Clk), 
+	.OpCode(_op_code),
+	.AluOP(_alu_op),
+	.RegDst(_reg_dst),
+	.Branch(_branch),
+	.JumpReg(_jump_reg),
+	.Jump(_jump),
+	.Jal(_jal),
+	.And(_and),
+	.MemRead(_mem_read),
+	.MemToReg(_mem_to_reg),
+	.MemWrite(_mem_write),
+	.Immediate(_immediate),
+	.RegWrite(_reg_write),
+	.MemVal(_mem_val)
+);
+
+ControlUnit control_unit(
+	.OpCode(_op_code),
+	.AluOP(_alu_op),
+	.RegDst(_reg_dst),
+	.Branch(_branch),
+	.JumpReg(_jump_reg),
+	.Jump(_jump),
+	.Jal(_jal),
+	.And(_and),
+	.MemRead(_mem_read),
+	.MemToReg(_mem_to_reg),
+	.MemWrite(_mem_write),
+	.Immediate(_immediate),
+	.RegWrite(_reg_write)
+);
+
+OutputInterface output_interface(
+	.Value(_mem_val),
+	.Hex0(HEX0),
+	.Hex1(HEX1),
+	.Hex2(HEX2),
+	.Hex3(HEX3),
+	.Hex4(HEX4),
+	.Hex5(HEX5),
+	.Hex6(HEX6),
+	.Hex7(HEX7)
+);
+
+endmodule

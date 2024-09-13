@@ -1,0 +1,47 @@
+Quartus Prime Archive log --	/home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.qarlog
+
+Archive:	/home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.qar
+Date:		Wed Sep 18 20:33:38 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32Mux.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/ClockSelector.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/ControlUnit.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemMux.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemory.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/DecodBcd.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/FrequencyDivisor.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/InputInterface.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionMemory.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionParser.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.qpf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/MuxInput.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/PCMux.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.qsf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit_assignment_defaults.qdf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProgramCounter.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/RegToOutputInterface.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Registers.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/RtAndRdMux.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/SignalExtend.v
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform1.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform10.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform2.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform3.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform4.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform5.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform6.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform7.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform8.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/Waveform9.vwf
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/assignment_defaults.qdf
+	======= Total: 36 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

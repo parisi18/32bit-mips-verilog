@@ -1,0 +1,163 @@
+# Loading project MIps32
+# Compile of Alu32.v was successful.
+# Compile of Alu32Mux.v was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of DataMemMux.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of DecodBcd.v was successful.
+# Compile of FetchInstruction.v was successful.
+# Compile of InputInterface.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of InstructionParser.v was successful.
+# Compile of Mips32.v was successful.
+# Compile of MuxInput.v was successful.
+# Compile of PCMux.v was successful.
+# Compile of ProcessUnit.v was successful.
+# Compile of ProgramCounter.v was successful.
+# Compile of Registers.v was successful.
+# Compile of RtAndRdMux.v was successful.
+# Compile of SignalExtend.v was successful.
+# Compile of RegToOutputInterface.v was successful.
+# Compile of ClockSelector.v was successful.
+# Compile of FrequencyDivisor.v was successful.
+# Compile of OutputInterface.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.Mips32
+# vsim work.Mips32 
+# Start time: 19:28:44 on Sep 18,2024
+# Loading work.Mips32
+# Loading work.FrequencyDivisor
+# Loading work.ClockSelector
+# Loading work.InputInterface
+# Loading work.ProcessUnit
+# Loading work.ProgramCounter
+# Loading work.InstructionMemory
+# Loading work.InstructionParser
+# Loading work.RtAndRdMux
+# Loading work.SignalExtend
+# Loading work.Registers
+# Loading work.RegToOutputInterface
+# Loading work.Alu32Mux
+# Loading work.Alu32
+# Loading work.PCMux
+# Loading work.DataMemory
+# Loading work.DataMemMux
+# Loading work.ControlUnit
+# Loading work.OutputInterface
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'HexOutput'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/process_unit File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'Input'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex0'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex1'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex2'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex3'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex4'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex5'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex6'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'Hex7'. The port definition is at: /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /Mips32/output_interface File: /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v Line: 94
+do /home/parisi-dev/repos/32bit-mips-verilog/PC2/wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/Mips32/process_unit/instruction_memory/input_data'.
+# Executing ONERROR command at macro /home/parisi-dev/repos/32bit-mips-verilog/PC2/wave.do line 23
+force -freeze sim:/Mips32/Clk 1 0, 0 {100 ps} -r 200
+force -freeze sim:/Mips32/clk_selector/Play 1 0
+force -freeze sim:/Mips32/clk_selector/SetOriginal 1 0
+force -freeze sim:/Mips32/input_interface/SwInput 110000000000001011 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

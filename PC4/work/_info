@@ -1,0 +1,540 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/parisi-dev/dev-tools/intelFPGA/20.1/modelsim_ase/bin
+vAlu32
+Z0 !s110 1726698519
+!i10b 1
+!s100 =4B?BGDN3iTjk<hF`WoDf3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IXSNbf>[laKn;ZHb55TbE82
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/parisi-dev/repos/32bit-mips-verilog/PC2
+w1726624009
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32.v
+!i122 3978
+L0 1 148
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1726698519.000000
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@alu32
+vAlu32Mux
+R0
+!i10b 1
+!s100 gHmScP[Qa_T1C>@KhD<a91
+R1
+IUE>RCd<^RTn[JWk?Q:;1h0
+R2
+R3
+Z8 w1726030305
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32Mux.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32Mux.v
+!i122 3979
+Z9 L0 1 16
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32Mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32Mux.v|
+!i113 1
+R6
+R7
+n@alu32@mux
+vClockSelector
+Z10 !s110 1726698520
+!i10b 1
+!s100 0Nb4D0dO>?MZcOh9`dhNU1
+R1
+I@cMlEMZgHN_dPUhh7kCna3
+R2
+R3
+Z11 w1726625777
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/ClockSelector.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/ClockSelector.v
+!i122 3997
+Z12 L0 1 22
+R4
+r1
+!s85 0
+31
+Z13 !s108 1726698520.000000
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/ClockSelector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/ClockSelector.v|
+!i113 1
+R6
+R7
+n@clock@selector
+vControlUnit
+R0
+!i10b 1
+!s100 3NXEXm4g6ioYYY1RW@=EY0
+R1
+Io`Qz58]AW3P7@8g7n:]Fb0
+R2
+R3
+w1726526412
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/ControlUnit.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/ControlUnit.v
+!i122 3980
+L0 1 652
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/ControlUnit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/ControlUnit.v|
+!i113 1
+R6
+R7
+n@control@unit
+vDataMemMux
+R0
+!i10b 1
+!s100 Ob<d`PPQ2::jkMS1AaJ_e1
+R1
+IRM4mE^zjNRY4K8Z<<dJDY2
+R2
+R3
+R8
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemMux.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemMux.v
+!i122 3981
+Z14 L0 1 15
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemMux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemMux.v|
+!i113 1
+R6
+R7
+n@data@mem@mux
+vDataMemory
+R0
+!i10b 1
+!s100 OL?ahULLBg5d=h@`9FR=h2
+R1
+IcnFIFj`oISgK8MoBL5V6<2
+R2
+R3
+w1726618509
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemory.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemory.v
+!i122 3982
+L0 1 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemory.v|
+!i113 1
+R6
+R7
+n@data@memory
+vDecodBcd
+R0
+!i10b 1
+!s100 2kdj=gb;;05D5e@^2:OmL1
+R1
+In8`OjV@3PVzcBUa5K8n>43
+R2
+R3
+w1726071160
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/DecodBcd.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/DecodBcd.v
+!i122 3983
+L0 1 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/DecodBcd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/DecodBcd.v|
+!i113 1
+R6
+R7
+n@decod@bcd
+vFetchInstruction
+R0
+!i10b 1
+!s100 zlJNN93V6W`WD^O5bW4i:3
+R1
+IVS4Oi_joWNjcUNl733ai;3
+R2
+R3
+R8
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/FetchInstruction.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/FetchInstruction.v
+!i122 3984
+L0 3 14
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/FetchInstruction.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/FetchInstruction.v|
+!i113 1
+R6
+R7
+n@fetch@instruction
+vFrequencyDivisor
+R10
+!i10b 1
+!s100 7?QBk4ll>W@iR>K9nMMA[2
+R1
+I5dFL^a^UgE@:;A;WQn>kn2
+R2
+R3
+R11
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/FrequencyDivisor.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/FrequencyDivisor.v
+!i122 3998
+R12
+R4
+r1
+!s85 0
+31
+R13
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/FrequencyDivisor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/FrequencyDivisor.v|
+!i113 1
+R6
+R7
+n@frequency@divisor
+vInputInterface
+R0
+!i10b 1
+!s100 9@A2I85VhR]>JOO9`Z?g@1
+R1
+IA?TTL9fmVV8g:^NWh=C=L2
+R2
+R3
+w1726626444
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/InputInterface.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/InputInterface.v
+!i122 3985
+R9
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/InputInterface.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/InputInterface.v|
+!i113 1
+R6
+R7
+n@input@interface
+vInstructionMemory
+R0
+!i10b 1
+!s100 BeKV[z48Q:[7nOhYI64`23
+R1
+IM?l4FamQZ:<RFA0HIfP]E3
+R2
+R3
+w1726698372
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionMemory.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionMemory.v
+!i122 3986
+L0 1 48
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionMemory.v|
+!i113 1
+R6
+R7
+n@instruction@memory
+vInstructionParser
+R0
+!i10b 1
+!s100 JYgW[3=DESioG_a77Knn?0
+R1
+IS34T^m:QNDXbm=emE1CfI3
+R2
+R3
+R8
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionParser.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionParser.v
+!i122 3987
+R12
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionParser.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionParser.v|
+!i113 1
+R6
+R7
+n@instruction@parser
+vMips32
+R0
+!i10b 1
+!s100 d0R2^?X9hXf0ahlRmhQSi0
+R1
+IjMXnEI71UK4ahZZmIJ2di0
+R2
+R3
+w1726640146
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v
+!i122 3988
+L0 1 106
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v|
+!i113 1
+R6
+R7
+n@mips32
+vMuxInput
+R0
+!i10b 1
+!s100 KL1;lEI2mJfflegK8[`VD0
+R1
+IJnOISVkRVNGnkUS[2?WMe2
+R2
+R3
+R8
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/MuxInput.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/MuxInput.v
+!i122 3989
+Z15 L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/MuxInput.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/MuxInput.v|
+!i113 1
+R6
+R7
+n@mux@input
+vOutputInterface
+R10
+!i10b 1
+!s100 Rk83A@NiXh>m66iD4IgiV3
+R1
+I6Z>0hIlEHQ]iocT]eAd2<1
+R2
+R3
+R11
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v
+!i122 3999
+L0 1 43
+R4
+r1
+!s85 0
+31
+R13
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v|
+!i113 1
+R6
+R7
+n@output@interface
+vPCMux
+R0
+!i10b 1
+!s100 Y^Ckd?TFa[m5n:[76B]?S3
+R1
+Ib79z:TQ2Mc?L2Ec2W4Ci73
+R2
+R3
+R11
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/PCMux.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/PCMux.v
+!i122 3990
+Z16 L0 1 27
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/PCMux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/PCMux.v|
+!i113 1
+R6
+R7
+n@p@c@mux
+vProcessUnit
+R0
+!i10b 1
+!s100 Ajm:NYK:C[LbW0;LRHT6U1
+R1
+IFd1fP]_na>P[l78O65B;=2
+R2
+R3
+w1726628698
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v
+!i122 3991
+L0 3 147
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v|
+!i113 1
+R6
+R7
+n@process@unit
+vProgramCounter
+R0
+!i10b 1
+!s100 [hi@ISj[SA^[SKTZM>FMI2
+R1
+IbA7=TjM2V9@ZD0^Ej`T4;2
+R2
+R3
+R11
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProgramCounter.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProgramCounter.v
+!i122 3992
+L0 3 28
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/ProgramCounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/ProgramCounter.v|
+!i113 1
+R6
+R7
+n@program@counter
+vRegisters
+R0
+!i10b 1
+!s100 ;dGgGAm_K@9k6Pbaloi_N2
+R1
+IE7`m^X7]0BKUI8nI]GAfb0
+R2
+R3
+w1726623960
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/Registers.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/Registers.v
+!i122 3993
+R16
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/Registers.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/Registers.v|
+!i113 1
+R6
+R7
+n@registers
+vRegToOutputInterface
+R10
+!i10b 1
+!s100 8CNnJT5C4z5mcHmHOPz2<2
+R1
+I6XHZe;AD_PneW9E5U5IOd1
+R2
+R3
+w1726623981
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/RegToOutputInterface.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/RegToOutputInterface.v
+!i122 3996
+R15
+R4
+r1
+!s85 0
+31
+R13
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/RegToOutputInterface.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/RegToOutputInterface.v|
+!i113 1
+R6
+R7
+n@reg@to@output@interface
+vRtAndRdMux
+R10
+!i10b 1
+!s100 oQQd;61?eNH80KfW>I6^f0
+R1
+ID[T[_<_AHYB=gI8?[Wm=I0
+R2
+R3
+R11
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/RtAndRdMux.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/RtAndRdMux.v
+!i122 3994
+R14
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/RtAndRdMux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/RtAndRdMux.v|
+!i113 1
+R6
+R7
+n@rt@and@rd@mux
+vSignalExtend
+R10
+!i10b 1
+!s100 [QiP_dS?;o]DPEE<NRfd?2
+R1
+IlB?T[zMFze==62VPGeC1X2
+R2
+R3
+R8
+8/home/parisi-dev/repos/32bit-mips-verilog/PC2/SignalExtend.v
+F/home/parisi-dev/repos/32bit-mips-verilog/PC2/SignalExtend.v
+!i122 3995
+L0 1 11
+R4
+r1
+!s85 0
+31
+R13
+!s107 /home/parisi-dev/repos/32bit-mips-verilog/PC2/SignalExtend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/parisi-dev/repos/32bit-mips-verilog/PC2/SignalExtend.v|
+!i113 1
+R6
+R7
+n@signal@extend

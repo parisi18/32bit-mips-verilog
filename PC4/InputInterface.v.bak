@@ -1,0 +1,27 @@
+module InputInterface(
+	input Clk,
+	input [17:0] SwInput,
+	output [31:0] ExtendedInput,
+	output InputSig
+);
+
+integer clk_single_count = 0;
+reg input_sig;
+reg [17:0] sw_input;
+reg [31:0] extended_input;
+
+always @(*) begin
+	
+	sw_input = SwInput;
+
+	if(clk_single_count == 0) begin
+		extended_input = {14'b0, sw_input};
+		input_sig = 1;
+		clk_single_count = 1;
+	end
+end
+
+assign InputSig = input_sig;
+assign ExtendedInput = extended_input;
+
+endmodule

@@ -1,0 +1,148 @@
+/home/parisi-dev/repos/32bit-mips-verilog/PC2/ControlUnit.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/ControlUnit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ControlUnit
+
+Top level modules:
+	ControlUnit
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/FrequencyDivisor.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/FrequencyDivisor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FrequencyDivisor
+
+Top level modules:
+	FrequencyDivisor
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemory.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/SignalExtend.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/SignalExtend.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SignalExtend
+
+Top level modules:
+	SignalExtend
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionParser.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/InstructionParser.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstructionParser
+
+Top level modules:
+	InstructionParser
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/ProgramCounter.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/ProgramCounter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ProgramCounter
+
+Top level modules:
+	ProgramCounter
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/Registers.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/Registers.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Registers
+
+Top level modules:
+	Registers
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/DecodBcd.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/DecodBcd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DecodBcd
+
+Top level modules:
+	DecodBcd
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/InputInterface.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/InputInterface.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InputInterface
+
+Top level modules:
+	InputInterface
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/RtAndRdMux.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/RtAndRdMux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RtAndRdMux
+
+Top level modules:
+	RtAndRdMux
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32Mux.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32Mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Alu32Mux
+
+Top level modules:
+	Alu32Mux
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/OutputInterface.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module OutputInterface
+
+Top level modules:
+	OutputInterface
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/MuxInput.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/MuxInput.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MuxInput
+
+Top level modules:
+	MuxInput
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/RegToOutputInterface.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/RegToOutputInterface.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegToOutputInterface
+
+Top level modules:
+	RegToOutputInterface
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemMux.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/DataMemMux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemMux
+
+Top level modules:
+	DataMemMux
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/FetchInstruction.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/FetchInstruction.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FetchInstruction
+
+Top level modules:
+	FetchInstruction
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/PCMux.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/PCMux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PCMux
+
+Top level modules:
+	PCMux
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/ClockSelector.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/ClockSelector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ClockSelector
+
+Top level modules:
+	ClockSelector
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/Mips32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mips32
+
+Top level modules:
+	Mips32
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/ProcessUnit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ProcessUnit
+
+Top level modules:
+	ProcessUnit
+
+} {} {}} /home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32.v {1 {vlog -work work -stats=none /home/parisi-dev/repos/32bit-mips-verilog/PC2/Alu32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Alu32
+
+Top level modules:
+	Alu32
+
+} {} {}}
