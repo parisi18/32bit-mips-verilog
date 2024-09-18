@@ -8,6 +8,8 @@ Projeto completo de uma CPU e memória RAM utilizando Verilog, sendo que, as ent
 - PC2: Implementação em Verilog da Unidade de Processamento
 - PC3: Implementação em Verilog da Unidade de Controle
 - PC4: Desenvolvimento Final
+    - [Relatório final](https://github.com/user-attachments/files/17051387/PC4-final.pdf)
+
 
 Cada etapa contém, seu planejamento, execução e relatório em LaTeX.
 
