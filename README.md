@@ -1,7 +1,5 @@
 # MIPS 32 Bits utilizando Verilog 
 
-IN PROGRESS... 😄
-
 🇧🇷
 Projeto completo de uma CPU e memória RAM utilizando Verilog, sendo que, as entregas são divididas em etapas:
 - PC1: Conjunto de Instruções e Arquitetura Base
